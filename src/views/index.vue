@@ -1,9 +1,12 @@
 <template>
-  <Image @goto="goSub" />
+  <Proxy>
+    <Image @goto="goSub" />
+  </Proxy>
 </template>
 
 <script setup>
 import Image from '../components/Image.vue'
+import Proxy from '../sdk/proxy.js'
 
 const router = useRouter()
 function goSub () {
