@@ -6,9 +6,13 @@ const proxy = defineComponent({
   name: 'proxy',
   setup (props, ctx) {
     const slots = ctx.slots.default?.()
-    let component = slots[0].type
+    let slot = slots[0]
+    let component = slot.type
+
+    console.log(ctx.slots.default())
 
     state.instance = markRaw(component)
+    state.props = slot.props
 
     return () => {
       return h(

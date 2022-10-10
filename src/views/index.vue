@@ -1,4 +1,6 @@
 <template>
+  <router-link to="/sub">go</router-link>
+
   <Proxy>
     <Image @goto="goSub" />
   </Proxy>

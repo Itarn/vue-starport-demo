@@ -25,6 +25,7 @@ function goSub () {
 .img-wrapper {
   width: v-bind('props.width'); height: v-bind('props.height');
   cursor: pointer;
+  transition: all linear 0.3s;
 }
 img {
   width: 100%; height: 100%;
