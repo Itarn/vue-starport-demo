@@ -1,8 +1,15 @@
 <template>
-  <component
-    :is="state.instance"
-    v-bind="state.props"
-  />
+  <Teleport
+    :to="state.isLanded ? '#image' : 'body'"
+    :disabled="state.isLanded"
+    v-show="state.isVisible"
+  >
+    {{ state.isLanded }}
+    <component
+      :is="state.instance"
+      v-bind="state.props"
+    />
+  </Teleport>
 </template>
 
 <script setup>

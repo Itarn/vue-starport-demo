@@ -23,6 +23,7 @@ function goSub () {
 
 <style lang="scss" module>
 .img-wrapper {
+  position: fixed; left: 0; top: 0;
   width: v-bind('props.width'); height: v-bind('props.height');
   cursor: pointer;
   transition: all linear 0.3s;

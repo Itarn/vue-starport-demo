@@ -1,7 +1,7 @@
 <template>
   <router-link to="/sub">go</router-link>
 
-  <Proxy>
+  <Proxy id="image">
     <Image @goto="goSub" />
   </Proxy>
 </template>

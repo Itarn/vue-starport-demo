@@ -2,6 +2,7 @@
   <div>
     <router-view />
 
+    <!-- 起飞组件的放置位置 -->
     <float />
   </div>
 </template>

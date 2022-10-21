@@ -2,7 +2,7 @@
   <div>
     <router-link to="/">Back</router-link>
 
-    <Proxy>
+    <Proxy id="image">
       <Image
         width="150px"
         height="150px"
